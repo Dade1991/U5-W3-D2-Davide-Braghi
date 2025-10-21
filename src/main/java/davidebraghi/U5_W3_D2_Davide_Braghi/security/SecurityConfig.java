@@ -18,5 +18,4 @@ public class SecurityConfig {
         httpSecurity.authorizeHttpRequests(req -> req.requestMatchers("/**").permitAll());
         return httpSecurity.build();
     }
-
 }

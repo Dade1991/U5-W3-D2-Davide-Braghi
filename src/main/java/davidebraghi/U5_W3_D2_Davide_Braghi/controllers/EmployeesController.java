@@ -2,15 +2,10 @@ package davidebraghi.U5_W3_D2_Davide_Braghi.controllers;
 
 
 import davidebraghi.U5_W3_D2_Davide_Braghi.entities.Employee;
-import davidebraghi.U5_W3_D2_Davide_Braghi.exceptions.BadRequestException;
-import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.BusinessTrips.NewBusinessTripResponseDTO;
-import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.Employees.NewEmployeeDTO;
 import davidebraghi.U5_W3_D2_Davide_Braghi.services.EmployeesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -26,20 +21,6 @@ public class EmployeesController {
                                        @RequestParam(defaultValue = "10") int size,
                                        @RequestParam(defaultValue = "id") String sortBy) {
         return employeesService.getEmployees(page, size, sortBy);
-    }
-
-    // POST http://localhost:3001/employees (+ body)
-
-    @PostMapping("")
-    @ResponseStatus(HttpStatus.CREATED)
-    public NewBusinessTripResponseDTO saveEmployee(@RequestBody @Validated NewEmployeeDTO body,
-                                                   BindingResult validation)
-            throws Exception {
-        if (validation.hasErrors()) {
-            throw new BadRequestException(validation.getAllErrors());
-        }
-        Employee newEmployee = employeesService.save(body);
-        return new NewBusinessTripResponseDTO(newEmployee.getId());
     }
 
     // GET http://localhost:3001/employees/{id}

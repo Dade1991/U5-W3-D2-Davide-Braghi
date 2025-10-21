@@ -1,6 +1,7 @@
 package davidebraghi.U5_W3_D2_Davide_Braghi.security;
 
 import davidebraghi.U5_W3_D2_Davide_Braghi.entities.Employee;
+import davidebraghi.U5_W3_D2_Davide_Braghi.exceptions.UnauthorizedException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,12 +17,21 @@ public class JWTTools {
     public String createToken(Employee employee) {
         return Jwts.builder()
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 24))
+                .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
                 .subject(String.valueOf(employee.getId()))
                 .signWith(Keys.hmacShaKeyFor(secret.getBytes()))
                 .compact();
     }
 
-    public void verifyToken() {
+    public void verifyToken(String accessToken) {
+
+        try {
+            Jwts.parser()
+                    .verifyWith(Keys.hmacShaKeyFor(secret.getBytes()))
+                    .build()
+                    .parse(accessToken);
+        } catch (Exception ex) {
+            throw new UnauthorizedException("Errors has occured in token. Try a new login.");
+        }
     }
 }
