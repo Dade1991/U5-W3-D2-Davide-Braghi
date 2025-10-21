@@ -1,6 +1,6 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.repositories;
+package davidebraghi.U5_W3_D2_Davide_Braghi.repositories;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.entities.BusinessTrip;
+import davidebraghi.U5_W3_D2_Davide_Braghi.entities.BusinessTrip;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.security;
+package davidebraghi.U5_W3_D2_Davide_Braghi.security;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.entities.Employee;
+import davidebraghi.U5_W3_D2_Davide_Braghi.entities.Employee;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,7 +21,7 @@ public class JWTTools {
                 .signWith(Keys.hmacShaKeyFor(secret.getBytes()))
                 .compact();
     }
-    
+
     public void verifyToken() {
     }
 }

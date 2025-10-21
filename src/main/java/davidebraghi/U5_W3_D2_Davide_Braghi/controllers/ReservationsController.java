@@ -1,10 +1,10 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.controllers;
+package davidebraghi.U5_W3_D2_Davide_Braghi.controllers;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.entities.Reservation;
-import davidebraghi.U5_W3_D1_Davide_Braghi.exceptions.BadRequestException;
-import davidebraghi.U5_W3_D1_Davide_Braghi.payloads.Reservations.NewReservationDTO;
-import davidebraghi.U5_W3_D1_Davide_Braghi.payloads.Reservations.NewReservationResponseDTO;
-import davidebraghi.U5_W3_D1_Davide_Braghi.services.ReservationsService;
+import davidebraghi.U5_W3_D2_Davide_Braghi.entities.Reservation;
+import davidebraghi.U5_W3_D2_Davide_Braghi.exceptions.BadRequestException;
+import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.Reservations.NewReservationDTO;
+import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.Reservations.NewReservationResponseDTO;
+import davidebraghi.U5_W3_D2_Davide_Braghi.services.ReservationsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

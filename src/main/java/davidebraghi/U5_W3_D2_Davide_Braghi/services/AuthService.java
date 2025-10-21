@@ -1,9 +1,9 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.services;
+package davidebraghi.U5_W3_D2_Davide_Braghi.services;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.entities.Employee;
-import davidebraghi.U5_W3_D1_Davide_Braghi.exceptions.UnauthorizedException;
-import davidebraghi.U5_W3_D1_Davide_Braghi.payloads.LoginDTO;
-import davidebraghi.U5_W3_D1_Davide_Braghi.security.JWTTools;
+import davidebraghi.U5_W3_D2_Davide_Braghi.entities.Employee;
+import davidebraghi.U5_W3_D2_Davide_Braghi.exceptions.UnauthorizedException;
+import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.LoginDTO;
+import davidebraghi.U5_W3_D2_Davide_Braghi.security.JWTTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

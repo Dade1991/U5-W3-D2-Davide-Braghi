@@ -1,4 +1,4 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.entities;
+package davidebraghi.U5_W3_D2_Davide_Braghi.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

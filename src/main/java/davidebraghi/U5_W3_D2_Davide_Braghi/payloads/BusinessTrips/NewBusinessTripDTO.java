@@ -1,6 +1,6 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.payloads.BusinessTrips;
+package davidebraghi.U5_W3_D2_Davide_Braghi.payloads.BusinessTrips;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.enums.BusinessTripStatus;
+import davidebraghi.U5_W3_D2_Davide_Braghi.enums.BusinessTripStatus;
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotEmpty;
 

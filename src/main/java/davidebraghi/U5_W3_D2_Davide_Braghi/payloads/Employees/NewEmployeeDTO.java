@@ -1,4 +1,4 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.payloads.Employees;
+package davidebraghi.U5_W3_D2_Davide_Braghi.payloads.Employees;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,4 +1,4 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.exceptions;
+package davidebraghi.U5_W3_D2_Davide_Braghi.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

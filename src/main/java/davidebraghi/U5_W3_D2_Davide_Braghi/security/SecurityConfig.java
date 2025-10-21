@@ -1,4 +1,4 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.security;
+package davidebraghi.U5_W3_D2_Davide_Braghi.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

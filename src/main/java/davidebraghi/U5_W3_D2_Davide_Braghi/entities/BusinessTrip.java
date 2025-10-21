@@ -1,6 +1,6 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.entities;
+package davidebraghi.U5_W3_D2_Davide_Braghi.entities;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.enums.BusinessTripStatus;
+import davidebraghi.U5_W3_D2_Davide_Braghi.enums.BusinessTripStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

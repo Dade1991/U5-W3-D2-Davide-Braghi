@@ -1,9 +1,9 @@
-package davidebraghi.U5_W3_D1_Davide_Braghi.services;
+package davidebraghi.U5_W3_D2_Davide_Braghi.services;
 
-import davidebraghi.U5_W3_D1_Davide_Braghi.entities.BusinessTrip;
-import davidebraghi.U5_W3_D1_Davide_Braghi.exceptions.NotFoundException;
-import davidebraghi.U5_W3_D1_Davide_Braghi.payloads.BusinessTrips.NewBusinessTripDTO;
-import davidebraghi.U5_W3_D1_Davide_Braghi.repositories.BusinessTripRepo;
+import davidebraghi.U5_W3_D2_Davide_Braghi.entities.BusinessTrip;
+import davidebraghi.U5_W3_D2_Davide_Braghi.exceptions.NotFoundException;
+import davidebraghi.U5_W3_D2_Davide_Braghi.payloads.BusinessTrips.NewBusinessTripDTO;
+import davidebraghi.U5_W3_D2_Davide_Braghi.repositories.BusinessTripRepo;
 import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
